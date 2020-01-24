@@ -11,15 +11,14 @@ echo "\e[94m            NOT SAFE FOR WORK IF2               \n";
 echo "\e[91m FORMAT NOMOR HP : INDONESIA '62***' , US='1***'\n";
 echo "\e[93m SCRIPT GOJEK AUTO REGISTER + AUTO CLAIM VOUCHER\n";
 echo "\n";
-echo "\e[96m[?] Masukkan Nomor HP Anda (62/1) : ";
-$nope = trim(fgets(STDIN));
+echo "\e[96m[?] Masukkan Nomor HP Andė= trim(fgets(STDIN));
 $register = register($nope);
 if ($register == false)
     {
     echo "\e[91m[x] Nomor Telah Terdaftar\n";
     }
   else
-    {
+q    {
     otp:
     echo "\e[96m[!] Masukkan Kode Verifikasi (OTP) : ";
     $otp = trim(fgets(STDIN));
@@ -46,7 +45,7 @@ if ($register == false)
             else{
                 echo "\e[92m[+] ".$claim."\n";
                 sleep(3);
-                echo "\e[93m[!] Trying to redeem Voucher : COBAINGOJEK !\n";
+                echo "\e[93m[!] Trying to redeem Voucher : GOFOODYUK !\n";
                 sleep(3);
                 goto ride;
             }
@@ -55,14 +54,14 @@ if ($register == false)
             if ($claim == false) {
                 echo "\e[92m[!]".$claim['errors'][0]['message']."\n";
                 sleep(3);
-                echo "\e[93m[!] Trying to redeem Voucher : GOFOODBOBA19 !\n";
+                echo "\e[93m[!] Trying to redeem Voucher : PESENGOFOOD !\n";
                 sleep(3);
                 goto next1;
             }
             else{
                 echo "\e[92m[+] ".$claim."\n";
                 sleep(3);
-                echo "\e[93m[!] Trying to redeem Voucher : COBAINGOJEK !\n";
+                echo "\e[93m[!] Trying to redeem Voucher : PAKEKGOJEK20 !\n";
                 sleep(3);
                 goto ride;
             }
@@ -71,7 +70,7 @@ if ($register == false)
             if ($claim == false) {
                 echo "\e[92m[!]".$claim['errors'][0]['message']."\n";
                 sleep(3);
-                echo "\e[93m[!] Trying to redeem Voucher : COBAINGOJEK !\n";
+                echo "\e[93m[!] Trying to redeem Voucher : GOFOODLAGI88 !\n";
                 sleep(3);
                 goto ride;
             }
