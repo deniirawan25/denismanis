@@ -31,21 +31,21 @@ q    {
       else
         {
         file_put_contents("token/".$verif['data']['customer']['name'].".txt", $verif['data']['access_token']);
-        echo "\e[93m[!] Trying to redeem Voucher : GOFOODBOBA07 !\n";
+        echo "\e[93m[!] Trying to redeem Voucher : GOFOODYUK !\n";
         sleep(3);
         $claim = claim($verif);
         if ($claim == false)
             {
             echo "\e[92m[!]".$voucher."\n";
             sleep(3);
-            echo "\e[93m[!] Trying to redeem Voucher : GOFOODBOBA10 !\n";
+            echo "\e[93m[!] Trying to redeem Voucher : GOFOODYUK !\n";
             sleep(3);
             goto next;
             }
             else{
                 echo "\e[92m[+] ".$claim."\n";
                 sleep(3);
-                echo "\e[93m[!] Trying to redeem Voucher : GOFOODYUK !\n";
+                echo "\e[93m[!] Trying to redeem Voucher : PESENGOFOOD !\n";
                 sleep(3);
                 goto ride;
             }
@@ -61,7 +61,7 @@ q    {
             else{
                 echo "\e[92m[+] ".$claim."\n";
                 sleep(3);
-                echo "\e[93m[!] Trying to redeem Voucher : PAKEKGOJEK20 !\n";
+                echo "\e[93m[!] Trying to redeem Voucher : GOFOODLAGI88 !\n";
                 sleep(3);
                 goto ride;
             }
@@ -78,7 +78,7 @@ q    {
             {
             echo "\e[92m[+] ".$claim . "\n";
             sleep(3);
-            echo "\e[93m[!] Trying to redeem Voucher : COBAINGOJEK !\n";
+            echo "\e[93m[!] Trying to redeem Voucher : PAKEKGOJEK20 !\n";
             sleep(3);
             goto ride;
             }
@@ -87,7 +87,7 @@ q    {
             if ($claim == false ) {
                 echo "\e[92m[!]".$claim['errors'][0]['message']."\n";
                 sleep(3);
-                echo "\e[93m[!] Trying to redeem Voucher : AYOCOBAGOJEK !\n";
+                echo "\e[93m[!] Trying to redeem Voucher : PAKEKGOJEK20 !\n";
                 sleep(3);
 
             }
